@@ -1,19 +1,13 @@
 import React, { ReactElement } from "react";
 import { FormatedOutPut } from "./FormatedOutPut/FormatedOutPut";
 import { InputArea } from "./InputArea/InputArea";
+import { Container } from "../../components/core/Container/Container";
 
 export const Index = (): ReactElement => {
   return (
-    <div
-      style={{
-        backgroundColor: "black",
-        color: "white",
-        display: "flex",
-        fontSize: "1.8rem",
-      }}
-    >
+    <Container>
       <InputArea />
       <FormatedOutPut />
-    </div>
+    </Container>
   );
 };
