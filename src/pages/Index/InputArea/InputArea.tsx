@@ -27,6 +27,8 @@ export const InputArea = ({ changeInputLine }: any): ReactElement => {
           backgroundColor: theme.bg,
           color: theme.color,
           fontSize: "1rem",
+          border: "none",
+          borderRight: "1px solid white",
         }}
         defaultValue={inputText}
         onChange={(e) => handleInputChange(e.currentTarget.value)}
