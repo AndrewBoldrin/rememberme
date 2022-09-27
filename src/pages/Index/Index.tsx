@@ -8,6 +8,7 @@ import { TopBar } from "../../components/core/TopBar/TopBar";
 
 export const Index = (): ReactElement => {
   const [isDark, setIsDark] = useState<boolean>(true);
+  const [inputLines, setInputLines] = useState([]);
 
   const toggleTheme = () => {
     setIsDark(!isDark);
@@ -18,8 +19,8 @@ export const Index = (): ReactElement => {
       <ThemeProvider theme={isDark ? themes.dark : themes.light}>
         <TopBar toggleTheme={toggleTheme} />
         <Container>
-          <InputArea />
-          <FormatedOutPut />
+          <InputArea changeInputLine={setInputLines} />
+          <FormatedOutPut inputLines={inputLines} />
         </Container>
       </ThemeProvider>
     </>

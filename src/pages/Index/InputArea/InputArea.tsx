@@ -1,15 +1,14 @@
 import React, { ReactElement, useContext, useState } from "react";
 import { ThemeContext } from "styled-components";
 
-export const InputArea = (): ReactElement => {
+export const InputArea = ({ changeInputLine }: any): ReactElement => {
   const theme = useContext(ThemeContext);
   const [inputText, setInputText] = useState<string>("");
-  const textByLine = inputText.split("\n");
-
-  console.log(textByLine);
 
   const handleInputChange = (newValue: string) => {
     setInputText(newValue);
+    const textLines = newValue.split("\n");
+    changeInputLine(textLines);
   };
 
   return (
