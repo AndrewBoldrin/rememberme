@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 import { palette } from "../../../styles/themes";
+import { MainButton } from "../Buttons/MainButton";
 
 export const TopBar = ({ toggleTheme }: any) => {
   const theme = useContext(ThemeContext);
@@ -25,19 +26,17 @@ export const TopBar = ({ toggleTheme }: any) => {
       >
         MARKDOWN
       </p>
-      <button
-        onClick={() => toggleTheme()}
-        style={{
-          backgroundColor: theme.mainButton.bg,
-          color: theme.mainButton.color,
-          border: "none",
-          borderRadius: ".2rem",
-          padding: ".7rem 1rem",
-          cursor: "pointer",
-        }}
-      >
-        Change Theme
-      </button>
+      <div>
+        <MainButton
+          style={{
+            marginRight: "1rem",
+          }}
+          onClick={() => window.print()}
+        >
+          Print
+        </MainButton>
+        <MainButton onClick={() => toggleTheme()}>Change Theme</MainButton>
+      </div>
     </div>
   );
 };

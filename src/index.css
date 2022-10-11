@@ -5,3 +5,23 @@
 textarea:focus {
   outline: none;
 }
+
+.print {
+  display: none;
+  position: absolute;
+  inset: 0;
+  padding: 4rem;
+  z-index: 999999999999999;
+  width: "100vw";
+  min-height: "100vh";
+}
+@media print {
+  .print {
+    background-color: #1f2126 !important;
+    -webkit-print-color-adjusts: exact;
+    width: "100%";
+    min-height: "100%";
+    display: block !important;
+    color: #ffffff;
+  }
+}

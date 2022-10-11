@@ -27,7 +27,7 @@ export const themes = {
       bg: palette.lightContrast,
       color: palette.main,
     },
-    bg: "white",
-    color: "black",
+    bg: palette.lightSecondary,
+    color: palette.main,
   },
 };

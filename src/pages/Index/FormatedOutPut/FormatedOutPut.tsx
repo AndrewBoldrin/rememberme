@@ -45,6 +45,7 @@ elements = {
 export const FormatedOutPut = ({ inputLines }: any): ReactElement => {
   return (
     <div
+      id="output"
       style={{
         height: "100vh",
         margin: "1rem 1rem 1rem 0",
