@@ -33,12 +33,14 @@ elements = {
     marginBlock: "3rem",
     padding: "2rem",
     backgroundColor: `${palette.lightMain}`,
+    color: `${palette.lightSecondary}`,
     borderLeft: `5px solid ${palette.contrast}`,
   },
   ">>": {
     marginBlock: "3rem",
     padding: "2rem",
     backgroundColor: `${palette.lightMain}`,
+    color: `${palette.lightSecondary}`,
   },
 };
 
@@ -56,7 +58,7 @@ export const FormatedOutPut = ({ inputLines }: any): ReactElement => {
         const element = line.split(" ")[0];
         const formatedText = line.slice(element.length, line.length);
         return (
-          <div key={index} style={elements![element]}>
+          <div key={index} style={{ ...elements![element], lineHeight: 2 }}>
             {formatedText}
           </div>
         );

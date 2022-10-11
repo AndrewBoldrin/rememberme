@@ -1,4 +1,4 @@
-import React, { ReactElement, useState, useRef } from "react";
+import React, { ReactElement, useState } from "react";
 import { FormatedOutPut } from "./FormatedOutPut/FormatedOutPut";
 import { InputArea } from "./InputArea/InputArea";
 import { Container } from "../../components/core/Container/Container";
