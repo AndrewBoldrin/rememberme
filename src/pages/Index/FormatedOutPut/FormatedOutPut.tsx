@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { palette } from "../../../styles/themes";
 
 interface IElements {

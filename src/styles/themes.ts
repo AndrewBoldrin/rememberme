@@ -5,6 +5,7 @@ export const palette = {
   lightSecondary: "#FFFFFF",
   contrast: "#D95F43",
   lightContrast: "#F2C4C4",
+  lightGrey: "#ccc",
 };
 
 export const themes = {
@@ -16,6 +17,10 @@ export const themes = {
       bg: palette.contrast,
       color: palette.lightSecondary,
     },
+    modal: {
+      bg: "#332F2D",
+      color: "white",
+    },
     bg: palette.main,
     color: palette.lightSecondary,
   },
@@ -26,6 +31,10 @@ export const themes = {
     mainButton: {
       bg: palette.lightContrast,
       color: palette.main,
+    },
+    modal: {
+      bg: "#FFF",
+      color: "#000",
     },
     bg: palette.lightSecondary,
     color: palette.main,
