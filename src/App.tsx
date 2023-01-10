@@ -1,7 +1,11 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import { Index } from "./pages/Index/Index";
 
 const App = (): ReactElement => {
+  useEffect(() => {
+    document.title = "markdown";
+  });
+
   return (
     <div>
       <Index />
