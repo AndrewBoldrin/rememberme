@@ -30,6 +30,7 @@ export const InputArea = ({ changeInputLine }: any): ReactElement => {
           border: "none",
           borderRight: `1px solid ${theme.color}`,
         }}
+        placeholder={`Insert your text here!\n\n Follow the examples:\n\n # title\n\n ## subtitle\n\n ### medium text\n\n #### small text\n\n * Marked Text\n\n - List item 1\n\n - List item 2\n\n > Highlight Important Text\n\n >> Highlight Text\n\nYou can see this clicking in them help button.`}
         defaultValue={inputText}
         onChange={(e) => handleInputChange(e.currentTarget.value)}
       ></textarea>
