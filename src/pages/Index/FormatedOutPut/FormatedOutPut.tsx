@@ -58,7 +58,14 @@ export const FormatedOutPut = ({ inputLines }: any): ReactElement => {
         const element = line.split(" ")[0];
         const formatedText = line.slice(element.length, line.length);
         return (
-          <div key={index} style={{ ...elements![element], lineHeight: 2 }}>
+          <div
+            key={index}
+            style={{
+              ...elements![element],
+              lineHeight: 2,
+              whiteSpace: "pre-line",
+            }}
+          >
             {formatedText}
           </div>
         );

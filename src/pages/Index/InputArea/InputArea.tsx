@@ -7,7 +7,7 @@ export const InputArea = ({ changeInputLine }: any): ReactElement => {
 
   const handleInputChange = (newValue: string) => {
     setInputText(newValue);
-    const textLines = newValue.split("\n");
+    const textLines = newValue.split("\n\n");
     changeInputLine(textLines);
   };
 
