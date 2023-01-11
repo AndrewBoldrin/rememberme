@@ -39,8 +39,11 @@ export const TopBar = ({ toggleTheme }: any) => {
       </p>
       <div
         style={{
+          maxWidth: "10rem",
           display: "flex",
           alignItems: "center",
+          justifyContent: "space-between",
+          flexGrow: 1,
         }}
       >
         <Modal isOpen={open} onClose={onClose}>

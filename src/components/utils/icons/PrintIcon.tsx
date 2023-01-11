@@ -16,7 +16,6 @@ interface IPrintIconStyle {
 export const StyledPrintIcon = styled.button<IPrintIconStyle>`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  margin-right: 2rem;
   &:hover {
     transform: scale(1.2);
   }

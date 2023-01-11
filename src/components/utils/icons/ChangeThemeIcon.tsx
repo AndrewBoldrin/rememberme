@@ -16,7 +16,6 @@ interface ChangeThemeIconStyle {
 export const StyledChangeThemeIcon = styled.button<ChangeThemeIconStyle>`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  margin-right: 2rem;
   &:hover {
     transform: scale(1.2);
   }
