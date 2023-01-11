@@ -22,10 +22,10 @@ export const Index = (): ReactElement => {
         <Container>
           <InputArea changeInputLine={setInputLines} />
           <FormatedOutPut inputLines={inputLines} />
-          <PrintArea>
-            <FormatedOutPut inputLines={inputLines} />
-          </PrintArea>
         </Container>
+        <PrintArea>
+          <FormatedOutPut inputLines={inputLines} />
+        </PrintArea>
       </ThemeProvider>
     </>
   );

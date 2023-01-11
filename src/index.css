@@ -9,11 +9,15 @@ textarea:focus {
 .print {
   display: none;
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 4rem;
   z-index: 999999999999999;
-  width: "100vw";
-  min-height: "100vh";
+  width: 100vw;
+  min-height: 100vh;
+  background-color: blue;
 }
 @media print {
   .print {
@@ -23,5 +27,9 @@ textarea:focus {
     min-height: "100%";
     display: block !important;
     color: #ffffff;
+  }
+
+  .app {
+    display: none;
   }
 }

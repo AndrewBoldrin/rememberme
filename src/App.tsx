@@ -7,7 +7,7 @@ const App = (): ReactElement => {
   });
 
   return (
-    <div>
+    <div className="app">
       <Index />
     </div>
   );
