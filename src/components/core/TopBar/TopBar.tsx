@@ -2,7 +2,9 @@ import { useContext, useEffect } from "react";
 import { ThemeContext } from "styled-components";
 import { useModal } from "../../../hooks/useModal";
 import { palette } from "../../../styles/themes";
+import { ChangeThemeIcon } from "../../utils/icons/ChangeThemeIcon";
 import { HelpIcon } from "../../utils/icons/HelpIcon";
+import { PrintIcon } from "../../utils/icons/PrintIcon";
 import { MainButton } from "../Buttons/MainButton";
 import { Help } from "../Help/Help";
 import { Modal } from "../Modal/Modal";
@@ -51,15 +53,20 @@ export const TopBar = ({ toggleTheme }: any) => {
           color="#FFF"
           handleIconClick={() => setOpen(true)}
         />
-        <MainButton
-          style={{
-            marginRight: "1rem",
-          }}
-          onClick={() => window.print()}
-        >
-          Print
-        </MainButton>
-        <MainButton onClick={() => toggleTheme()}>Change Theme</MainButton>
+
+        <PrintIcon
+          width="2.5rem"
+          height="2.5rem"
+          color="#FFF"
+          handleIconClick={() => setOpen(true)}
+        />
+
+        <ChangeThemeIcon
+          width="2.5rem"
+          height="2.5rem"
+          color="#FFF"
+          handleIconClick={() => toggleTheme()}
+        />
       </div>
     </div>
   );
