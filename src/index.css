@@ -17,16 +17,13 @@ textarea:focus {
   z-index: 999999999999999;
   width: 100vw;
   min-height: 100vh;
-  background-color: blue;
 }
 @media print {
   .print {
-    background-color: #1f2126 !important;
     -webkit-print-color-adjusts: exact;
     width: "100%";
     min-height: "100%";
     display: block !important;
-    color: #ffffff;
   }
 
   .app {
